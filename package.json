@@ -1,0 +1,23 @@
+{
+  "name": "kings-league",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "astro": "2.7.2"
+  },
+  "devDependencies": {
+    "@unocss/reset": "0.53.4",
+    "prettier": "2.8.8",
+    "prettier-plugin-astro": "0.10.0",
+    "unocss": "0.53.4"
+  }
+}
