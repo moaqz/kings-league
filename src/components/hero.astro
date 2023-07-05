@@ -1,0 +1,80 @@
+---
+import TicketIcon from "@/icons/Ticket.astro";
+---
+
+<section class="bg-cover bg-center bg-no-repeat hero px-4 py-3 relative">
+  <div class="max-w-2xl mx-auto">
+    <div
+      class="grid grid-cols-2 justify-items-center items-center gap-4 sm:(grid-cols-[auto_1fr_auto] items-start gap-8)"
+    >
+      <div class="justify-self-end">
+        <img
+          src="/hero/face-kl.svg"
+          width="70"
+          height="120"
+          alt="Kings League logo"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </div>
+
+      <div class="justify-self-start sm:(order-3)">
+        <img
+          src="/hero/face-ql.svg"
+          width="70"
+          height="120"
+          alt="Queens League logo"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </div>
+
+      <div
+        class="flex flex-col items-center col-span-2 sm:(order-2 col-span-1)"
+      >
+        <div class="max-w-500px max-h-150px">
+          <img
+            src="/hero/title-banner.svg"
+            alt="Kings & Queens Finals Destino Madrid"
+            width="500"
+            height="150"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="-mt-4 sm:-mt-10">
+          <img
+            src="/hero/text-civitas.svg"
+            alt="Civitas Metropolitano - 29 de julio"
+            height="40"
+            width="400"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+
+        <a
+          href="https://www.entradas.com/artist/kings-league/?affiliate=KQL"
+          class="bg-#ffcf00 px-3.5 py-1.5 rounded-md text-black font-black uppercase inline-flex items-center gap-2.5 transition-colors hover:(bg-black text-#ffcf00) mt-4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TicketIcon />
+          <span>Entradas</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    background-image: url("/hero/small-banner.webp");
+  }
+
+  @media (min-width: 960px) {
+    .hero {
+      background-image: url("/hero/medium-banner.webp");
+    }
+  }
+</style>
