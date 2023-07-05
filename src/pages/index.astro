@@ -1,15 +1,8 @@
 ---
+import RootLayout from "@/layouts/root.astro";
+import Header from "@components/header.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Kings League | Fútbol real</title>
-  </head>
-  <body class="bg-dark-9 text-light-2">
-    <h1>Astro</h1>
-  </body>
-</html>
+<RootLayout>
+  <Header />
+</RootLayout>

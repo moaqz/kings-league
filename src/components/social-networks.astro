@@ -1,0 +1,27 @@
+---
+import { SOCIAL_NETWORKS } from "@/lib/constants";
+---
+
+<div class="flex items-center gap-4">
+  {
+    SOCIAL_NETWORKS.map(({ href, icon, name }) => (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener norefferer"
+        class="flex items-center justify-center fill-red"
+      >
+        <img
+          class="aspect-square"
+          src={icon}
+          alt={`${name} Logo`}
+          width="20"
+          height="20"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+        />
+      </a>
+    ))
+  }
+</div>

@@ -1,0 +1,137 @@
+---
+import Menu from "@/icons/Menu.astro";
+
+import { LINKS, TEAMS } from "@/lib/constants";
+import SocialNetworks from "./social-networks.astro";
+import LinkButton from "./link-button.astro";
+import TicketIcon from "@/icons/Ticket.astro";
+import ShirtIcon from "@/icons/Shirt.astro";
+import TwitchIcon from "@/icons/Twitch.astro";
+---
+
+<header>
+  <div
+    class="hidden lg:(flex items-center justify-between bg-white py-2 px-10)"
+  >
+    <ul class="flex items-center ml-24 rounded-x md:gap-x-4">
+      {
+        TEAMS.map(({ name, logo }) => (
+          <li>
+            <a href={`/team/${name}`} title={name}>
+              <img
+                class="h-8 w-8"
+                src={logo}
+                alt={`Escudo del equipo ${name}`}
+                width="48"
+                height="48"
+              />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <SocialNetworks />
+  </div>
+
+  <div class="flex justify-between px-4 lg:hidden relative">
+    <a href="/" aria-label="Back to home" class="block h-20 w-16">
+      <img
+        src="/logo-kings.svg"
+        alt="Kings League logo"
+        class="h-full w-full"
+        decoding="async"
+        fetchpriority="high"
+      />
+    </a>
+
+    <div class="flex gap-3 h-fit pt-2">
+      <div class="hidden sm:(flex items-center gap-4)">
+        <LinkButton
+          href="https://www.entradas.com/artist/kings-league-queens-league/kings-queens-finals-3415031/?affiliate=KQL"
+          text="Entradas"
+        >
+          <TicketIcon slot="icon" />
+        </LinkButton>
+
+        <LinkButton href="https://store.kingsleague.pro/" text="Tienda">
+          <ShirtIcon slot="icon" />
+        </LinkButton>
+
+        <LinkButton href="https://www.twitch.tv/kingsleague" text="Directo">
+          <TwitchIcon slot="icon" />
+        </LinkButton>
+      </div>
+
+      <button class="text-white" aria-label="Open menu" id="menu">
+        <Menu />
+      </button>
+    </div>
+  </div>
+
+  <nav class="p-4 sm:hidden lg:(block relative px-10 pb-7.5 pt-0)">
+    <a
+      href="/"
+      aria-label="Back to home"
+      class="hidden lg:(block absolute -top-8 z-30)"
+    >
+      <img
+        src="/logo-kings.svg"
+        alt="Kings League logo"
+        decoding="async"
+        fetchpriority="high"
+        class="h-24 w-20"
+      />
+    </a>
+
+    <div class="flex items-center justify-center lg:justify-between pt-2">
+      <ul class="hidden lg:(flex items-start gap-4 ml-24)">
+        {
+          LINKS.map((link) => {
+            return (
+              <li>
+                <a
+                  href={link.href}
+                  class="text-white/70 text-sm font-semibold hover:text-white focus:text-white transition-colors"
+                >
+                  {link.text}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+
+      <div class="flex items-center justify-center flex-wrap gap-4">
+        <LinkButton
+          href="https://www.entradas.com/artist/kings-league-queens-league/kings-queens-finals-3415031/?affiliate=KQL"
+          text="Entradas"
+        >
+          <TicketIcon slot="icon" />
+        </LinkButton>
+
+        <LinkButton href="https://store.kingsleague.pro/" text="Tienda">
+          <ShirtIcon slot="icon" />
+        </LinkButton>
+
+        <LinkButton
+          href="https://www.twitch.tv/kingsleague"
+          text="Directo"
+          className="lg:hidden xl:inline-flex"
+        >
+          <TwitchIcon slot="icon" />
+        </LinkButton>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  header {
+    background: linear-gradient(236.07deg, #f7ab38 0.08%, #e8521e 102.47%);
+  }
+
+  nav {
+    background: linear-gradient(236.07deg, #f7ab35 0.09%, #e8521e 102.47%);
+  }
+</style>
