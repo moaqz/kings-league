@@ -12,10 +12,10 @@ const { href, text, className, ...props } = Astro.props;
 <a
   href={href}
   class:list={[
-    "text-white uppercase font-black inline-flex items-center gap-2.5 text-sm hover:(text-black transition-colors)",
+    "text-white font-title text-xs uppercase inline-flex items-center gap-2.5 text-sm hover:(text-black transition-colors)",
     "sm:(border rounded-md shadow px-3.5 py-1.5)",
     "sm:hover:(bg-white text-#f7ab35)",
-    className && className
+    className && className,
   ]}
   target="_blank"
   rel="noopener noreferrer"
