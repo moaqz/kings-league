@@ -10,8 +10,6 @@ It is worth noticing that image size can have a huge impact on page performance.
 
 On the official website, some images are larger than 100KB. While this is not necessarily a bad thing, in this case, these images can be optimized to significantly reduce their size.
 
-On the official website, some images are larger than 100KB. While this is not necessarily a bad thing, in this case, these images can be optimized to significantly reduce their size.
-
 The approach I took to reduce the load size of images is to use tools like [squoosh.app](https://squoosh.app/editor), [Cloudinary](https://cloudinary.com/), and [SvgOMG](https://jakearchibald.github.io/svgomg/).
 
 For images **(.jpg)** that are loaded and exceed 70KB in size, I converted them into **.webp** format.
@@ -24,15 +22,14 @@ On the other hand, I reduced the size of all the **.svg** by using [SvgOMG](http
 
 In fact, the above section loads **320 KB** of images. With proper optimization, it can be reduced less than **120KB**, which is an incredible performance improvement.
 
-<div style="display: flex; gap: 18px;">
-  <div>
-    <p style="font-weight: bold;">Before</p>
-    <img src="./assets/kl-images-size.png" alt="Image 1" style="width: 100%; height: fit;">
-  </div>
-  <div>
-    <p style="font-weight: bold;">After</p>
-    <img src="./assets/kl-clone-images-size.png" alt="Image 2" style="width: 100%; height: fit;">
-  </div>
+<div>
+  <p>Before</p>
+  <img src="./assets/kl-images-size.png" alt="Image 1">
+</div>
+
+<div>
+  <p>After</p>
+  <img src="./assets/kl-clone-images-size.png" alt="Image 2">
 </div>
 
 ### Serve WebP images
