@@ -27,20 +27,20 @@ export const LINKS = [
 
 export const TEAMS = [
   {
-    name: "aniquiladores-fc",
-    logo: "/teams/logos/aniquiladores.svg",
-  },
-  {
     name: "porcinos-fc",
     logo: "/teams/logos/porcinos-fc.svg",
   },
   {
-    name: "xbuyer-team",
-    logo: "/teams/logos/xbuyer.svg",
+    name: "aniquiladores-fc",
+    logo: "/teams/logos/aniquiladores.svg",
   },
   {
     name: "pio-fc",
     logo: "/teams/logos/pio-fc.svg",
+  },
+  {
+    name: "xbuyer-team",
+    logo: "/teams/logos/xbuyer.svg",
   },
   {
     name: "el-barrio",
@@ -59,16 +59,16 @@ export const TEAMS = [
     logo: "/teams/logos/ultimate-mostoles.svg",
   },
   {
-    name: "los-troncos-fc",
-    logo: "/teams/logos/los-troncos.svg",
-  },
-  {
     name: "kunisports",
     logo: "/teams/logos/kunisports.svg",
   },
   {
     name: "jijantes",
     logo: "/teams/logos/jijantes.svg",
+  },
+  {
+    name: "los-troncos-fc",
+    logo: "/teams/logos/los-troncos.svg",
   },
   {
     name: "saiyans-fc",
