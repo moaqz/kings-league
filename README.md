@@ -20,7 +20,7 @@ On the other hand, I reduced the size of all the **.svg** by using [SvgOMG](http
 
 ![Kings League header](/assets/kl-header.png)
 
-In fact, the above section loads **320 KB** of images. With proper optimization, it can be reduced less than **120KB**, which is an incredible performance improvement.
+The above section loads **320 KB** of images. With proper optimization, it can be reduced to less than **120KB**, which is an incredible performance improvement.
 
 <div>
   <p>Before</p>
@@ -36,6 +36,31 @@ In fact, the above section loads **320 KB** of images. With proper optimization,
 
 Even though WebP is a modern image format that provides superior lossless and lossy compression for web images, it is not supported by older browsers.
 
-If your application needs to support older browsers, I encourage you to look at the following posts:
+If your application needs to support older browsers, I encourage you to look at the following post: [Serve WebP images - web.dev](https://web.dev/serve-images-webp/#serve-webp-images)
 
-[Serve WebP images - web.dev](https://web.dev/serve-images-webp/#serve-webp-images)
+## Web Font
+
+![invisible-font-load](/assets/invisible-font-load.png)
+
+When you measure the page load with Lighthouse or the performance DevTools, the text is invisible until the font is loaded.
+
+This problem can be solved by using the CSS descriptor `font-display: swap` inside the `@font-face` declaration. The `font-display: swap` descriptor means that the browser draws text immediately with a fallback if the font face isn’t loaded, but swaps the font face in as soon as it loads.
+
+### Preload WebFont resources
+
+![kl-font-load](/assets/kl-font-load.png)
+
+In the above audit, the web fonts are part of the critical request chain and fetched last. However, considering the importance of the fonts on the Kings League page, by preloading them, the browser knows that it needs to download the font earlier, without having to wait for the CSSOM to be created.
+
+![kl-clone-font-load](/assets/kl-clone-font-load.png)
+
+## Defer non-critical CSS
+
+CSS files are render-blocking resources, as they need to be loaded and processed before the browser renders the page.
+
+![unusued-css-coverage](/assets/unused-css-coverage.png)
+
+When analyzing the page with the coverage DevTools, it becomes clear that the page is being blocked by non-critical CSS. To reduce the blocking time and improve page load time, there are a few common approaches:
+
+1. Defer non-critical CSS
+2. Minify CSS
