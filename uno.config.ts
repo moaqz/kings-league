@@ -8,5 +8,8 @@ export default defineConfig({
       body: ["Archivo", "system-ui", "sans-serif"],
       title: ["Archivo Black", "system-ui", "sans-serif"],
     },
+    maxWidth: {
+      "8xl": "100rem",
+    },
   },
 });

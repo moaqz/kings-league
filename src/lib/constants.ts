@@ -98,3 +98,16 @@ export const SOCIAL_NETWORKS = [
     href: "https://www.youtube.com/@KingsLeagueOfficial",
   },
 ];
+
+export const VIDEOS = [
+  "coO0j7pJtq0",
+  "x-qrmh-yt8k",
+  "teiP2LC0DAc",
+  "_hs1EG4J9Ik",
+  "E6IGcZ9MzTI",
+  "sRyOYym8j2o",
+  "TxZxMeEM1-U",
+  "CqC3qy23Q5c",
+  "UPLSesPpBe0",
+  "wLrlDL5FzzU",
+];
