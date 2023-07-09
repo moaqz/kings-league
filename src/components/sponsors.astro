@@ -1,0 +1,183 @@
+---
+const MAIN_SPONSORS = [
+  {
+    name: "spotify",
+    url: "https://spotify.com/",
+  },
+  {
+    name: "clinica",
+    url: "https://www.clinicabaviera.com/",
+  },
+  {
+    name: "uber-eats",
+    url: "https://www.ubereats.com/",
+  },
+  {
+    name: "adidas",
+    url: "https://adidas.com/",
+  },
+  {
+    name: "imagin",
+    url: "https://www.imagin.com/",
+  },
+  {
+    name: "iq-option",
+    url: "https://iqoption.com/",
+  },
+  {
+    name: "el-pozo",
+    url: "https://www.elpozo-king.com/",
+  },
+  {
+    name: "grefusa",
+    url: "https://grefusa.com/",
+  },
+  {
+    name: "shukran",
+    url: "https://shukran.es/",
+  },
+  {
+    name: "mc-delivery",
+    url: "https://www.mcdonalds.com/",
+  },
+  {
+    name: "mahou",
+    url: "https://www.mahou.es/",
+  },
+  {
+    name: "xiaomi",
+    url: "https://www.xiaomiarg.com.ar/",
+  },
+  {
+    name: "simyo",
+    url: "https://www.simyo.es/",
+  },
+  {
+    name: "floki",
+    url: "https://floki.com/",
+  },
+  {
+    name: "fantasy",
+    url: "https://www.marca.com/kings-league-fantasy.html",
+  },
+  {
+    name: "cubirito",
+    url: "https://twitter.com/curubitotv",
+  },
+];
+---
+
+<section
+  class="text-sm text-white px-4 py-8 border-white border-t-2"
+>
+  <div
+    class="mx-auto max-w-8xl grid grid-cols-2 gap-10 lg:(grid-cols-[auto_auto_1fr_auto_auto] grid-rows-1)"
+  >
+    <div>
+      <div class="border-b border-[#F8AF3F] mb-5">
+        <strong>Principal</strong> partner
+      </div>
+
+      <a href="https://www.infojobs.net/" target="_blank">
+        <img
+          src="/sponsors/infojobs.svg"
+          alt="Logo Principal Sponsor"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+          width="100"
+          height="50"
+        />
+      </a>
+    </div>
+
+    <div>
+      <div class="border-b border-[#F8AF3F] mb-5">
+        <strong>Stadium</strong> partner
+      </div>
+
+      <a href="https://www.cupraofficial.es/" target="_blank">
+        <img
+          src="/sponsors/cupra.svg"
+          alt="Logo Stadium Sponsor"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+          width="100"
+          height="50"
+        />
+      </a>
+    </div>
+
+    <div class="col-span-2 lg:col-span-1">
+      <div class="border-b border-[#F8AF3F] mb-5">
+        <strong>Main</strong> partner
+      </div>
+
+      <div class="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-5 items-center">
+        {
+          MAIN_SPONSORS.map((item) => {
+            return (
+              <a href={item.url} target="_blank">
+                <img
+                  src={`/sponsors/${item.name}.svg`}
+                  alt={`Logo ${item.name} Sponsor`}
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="low"
+                  width="100"
+                  height="50"
+                />
+              </a>
+            );
+          })
+        }
+      </div>
+    </div>
+
+    <div>
+      <div class="border-b border-[#F8AF3F] mb-5">
+        <strong>Hosting</strong> partner
+      </div>
+      <a href="https://www.portdebarcelona.cat/es/">
+        <img
+          src="/sponsors/port-bcn.svg"
+          alt="Logo Stadium Sponsor"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+          width="100"
+          height="50"
+        />
+      </a>
+    </div>
+
+    <div>
+      <div class="border-b border-[#F8AF3F] mb-5">
+        <strong>Media</strong> partner
+      </div>
+      <a href="https://www.portdebarcelona.cat/es/">
+        <img
+          src="/sponsors/marca.svg"
+          alt="Logo Stadium Sponsor"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+          width="100"
+          height="50"
+        />
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-image: linear-gradient(
+      0deg,
+      #202c66 0%,
+      rgba(34, 41, 77, 0) 90.78%
+    );
+    background-color: #000000;
+  }
+</style>

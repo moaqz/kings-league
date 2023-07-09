@@ -1,0 +1,124 @@
+---
+import SocialNetworks from "./social-networks.astro";
+
+const FOOTER_LINKS = [
+  {
+    text: "Entradas",
+    href: "/entradas",
+  },
+  {
+    text: "Reglamentos",
+    href: "/reglamentos",
+  },
+  {
+    text: "FAQS",
+    href: "/faqs",
+  },
+  {
+    text: "Draft",
+    href: "/draft-jugador",
+  },
+  {
+    text: "Contacto",
+    href: "/contacto",
+  },
+];
+---
+
+<footer>
+  <div class="px-4 py-10 max-w-8xl mx-auto">
+    <div
+      class="flex flex-col lg:(flex-row justify-between items-center) gap-8 mb-7.5"
+    >
+      <div class="flex-1">
+        <img
+          src="/kl-landscape.svg"
+          width="200"
+          height="90"
+          alt="logo de Kings League y Infojobs"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+        />
+      </div>
+
+      <div class="flex-1">
+        <img
+          src="/ql-hor-pos.svg"
+          width="200"
+          height="90"
+          alt="logo de Queens League"
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+        />
+      </div>
+
+      <ul class="grid sm:(grid-cols-3 gap-x-8 flex-1)">
+        {
+          FOOTER_LINKS.map((link) => {
+            return (
+              <li>
+                <a
+                  href={link.href}
+                  class="text-sm text-black flex py-1 hover:underline"
+                >
+                  {link.text}
+                </a>
+              </li>
+            );
+          })
+        }
+
+        <li>
+          <a
+            href="https://www.marca.com/kings-league-fantasy.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="m-logo text-sm text-black flex py-1 gap-1 hover:underline"
+            >Fantasy</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="mt-8 flex flex-col gap-8 sm:(flex-row justify-between items-center)"
+    >
+      <SocialNetworks />
+
+      <ul class="[&>li>a]:(text-xs text-black) flex justify-between sm:gap-5">
+        <li>
+          <a href="/politica-de-privacidad" class="hover:underline"
+            >Política de Privacidad</a
+          >
+        </li>
+        <li>
+          <a href="/aviso-legal" class="hover:underline">Aviso legal</a>
+        </li>
+        <li>
+          <a href="/politica-de-cookies" class="hover:underline"
+            >Política de Cookies</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background: #f7ab35;
+    background-image: linear-gradient(
+      236.07deg,
+      #f7ab35 0.09%,
+      #e8521e 102.47%
+    );
+  }
+
+  .m-logo::after {
+    content: url("/m.svg");
+    width: 10px;
+    height: 10px;
+  }
+</style>
