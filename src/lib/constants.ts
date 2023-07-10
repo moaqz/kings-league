@@ -83,19 +83,24 @@ export const SOCIAL_NETWORKS = [
     href: "https://twitter.com/kingsleague",
   },
   {
-    name: "Tiktok",
-    icon: "/social/tiktok.svg",
-    href: "https://www.tiktok.com/@kingsleague",
-  },
-  {
     name: "Instagram",
     icon: "/social/instagram.svg",
     href: "https://www.instagram.com/kingsleague",
   },
   {
+    name: "Tiktok",
+    icon: "/social/tiktok.svg",
+    href: "https://www.tiktok.com/@kingsleague",
+  },
+  {
     name: "Youtube",
     icon: "/social/youtube.svg",
     href: "https://www.youtube.com/@KingsLeagueOfficial",
+  },
+  {
+    name: "Twitch",
+    icon: "/social/twitch.svg",
+    href: "https://www.twitch.tv/kingsleague",
   },
 ];
 
