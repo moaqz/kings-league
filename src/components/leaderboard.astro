@@ -1,0 +1,147 @@
+---
+const LEADERBOARD = [
+  {
+    team: "Porcinos FC",
+    logo: "/teams/logos/porcinos-fc.svg",
+    points: 25,
+    playedMatches: 22,
+    goalDifference: 10,
+  },
+  {
+    team: "Aniquiladores FC",
+    logo: "/teams/logos/aniquiladores.svg",
+    points: 23,
+    playedMatches: 22,
+    goalDifference: 10,
+  },
+  {
+    team: "xBuyer Team",
+    logo: "/teams/logos/xbuyer.svg",
+    points: 18,
+    playedMatches: 10,
+    goalDifference: 10,
+  },
+  {
+    team: "PIO FC",
+    logo: "/teams/logos/pio-fc.svg",
+    points: 18,
+    playedMatches: 10,
+    goalDifference: -7,
+  },
+  {
+    team: "El Barrio",
+    logo: "/teams/logos/el-barrio.svg",
+    points: 17,
+    playedMatches: 10,
+    goalDifference: 3,
+  },
+  {
+    team: "1K FC",
+    logo: "/teams/logos/1k.svg",
+    points: 14,
+    playedMatches: 10,
+    goalDifference: -3,
+  },
+  {
+    team: "Kunisports",
+    logo: "/teams/logos/kunisports.svg",
+    points: 13,
+    playedMatches: 10,
+    goalDifference: -3,
+  },
+  {
+    team: "Jijantes FC",
+    logo: "/teams/logos/jijantes.svg",
+    points: 13,
+    playedMatches: 10,
+    goalDifference: -5,
+  },
+  {
+    team: "Rayo de Barcelona",
+    logo: "/teams/logos/rayo-barcelona.svg",
+    points: 13,
+    playedMatches: 10,
+    goalDifference: -13,
+  },
+  {
+    team: "Ultimate Móstoles",
+    logo: "/teams/logos/ultimate-mostoles.svg",
+    points: 10,
+    playedMatches: 10,
+    goalDifference: -14,
+  },
+  {
+    team: "Los Troncos FC",
+    logo: "/teams/logos/los-troncos.svg",
+    points: 9,
+    playedMatches: 10,
+    goalDifference: -5,
+  },
+  {
+    team: "Saiyans FC",
+    logo: "/teams/logos/saiyans-fc.svg",
+    points: 9,
+    playedMatches: 10,
+    goalDifference: -13,
+  },
+];
+---
+
+<div>
+  <div class="p-4 bg-black rounded-t-xl">
+    <h2>
+      <a
+        href="/clasificacion"
+        class="block text-white font-title text-center uppercase text-sm"
+        >Clasificación</a
+      >
+    </h2>
+  </div>
+
+  <div class="shadow rounded-b-lg pb-5">
+    <table class="w-full">
+      <thead class="shadow-sm">
+        <tr class="[&>th]:(py-2.5 text-[10px] text-[#5c5c5c])">
+          <th title="Posición" scope="col">POS</th>
+          <th title="Equipo" scope="col" class="text-left">EQUIPO</th>
+          <th title="Puntos" scope="col">PTS</th>
+          <th title="Partidos jugados" scope="col">PJ</th>
+          <th title="Diferencia de goles" scope="col">DG</th>
+        </tr>
+      </thead>
+
+      <tbody
+        class="[&>tr>th]:(py-2 text-[10px]) [&>tr]:(border-t border-t-[#e8e8e8])"
+      >
+        {
+          LEADERBOARD.map((team, idx) => {
+            return (
+              <tr
+                class:list={[
+                  idx + 1 === 1 && "border-l-3 border-l-green",
+                  idx + 1 > 1 && idx + 1 <= 4 && "border-l-3 border-l-amber",
+                  idx + 1 >= 5 && idx + 1 <= 10 && "border-l-3 border-l-red",
+                ]}
+              >
+                <th>{idx + 1}</th>
+                <th class="inline-flex items-center gap-4">
+                  <img
+                    class="h-8 w-8"
+                    src={team.logo}
+                    alt={`Escudo del equipo ${team.team}`}
+                    width="32"
+                    height="32"
+                  />
+                  <span>{team.team}</span>
+                </th>
+                <th class="text-sm">{team.points}</th>
+                <th>{team.playedMatches}</th>
+                <th>{team.goalDifference}</th>
+              </tr>
+            );
+          })
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

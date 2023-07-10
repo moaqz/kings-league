@@ -1,6 +1,7 @@
 ---
 import Footer from "@/components/footer.astro";
 import Hero from "@/components/hero.astro";
+import Leaderboard from "@/components/leaderboard.astro";
 import Sponsors from "@/components/sponsors.astro";
 import VideoList from "@/components/video-list.astro";
 import RootLayout from "@/layouts/root.astro";
@@ -11,6 +12,9 @@ import Header from "@components/header.astro";
   <Header />
   <main>
     <Hero />
+    <section class="mx-auto px-4 max-w-8xl my-8">
+      <Leaderboard />
+    </section>
     <VideoList />
     <Sponsors />
   </main>
