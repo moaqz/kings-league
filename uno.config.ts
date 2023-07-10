@@ -11,5 +11,16 @@ export default defineConfig({
     maxWidth: {
       "8xl": "100rem",
     },
+    colors: {
+      kl: {
+        darkgrey: "#5c5c5c",
+        orange: "#F8AF3F",
+        grey: "#e8e8e8",
+        yellow: "#ffcf00",
+      },
+    },
+    fontSize: {
+      s: "10px",
+    },
   },
 });

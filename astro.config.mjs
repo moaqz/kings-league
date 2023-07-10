@@ -8,6 +8,4 @@ export default defineConfig({
       injectReset: true,
     }),
   ],
-  site: "https://moaqz.github.io",
-  base: "/kings-league"
 });

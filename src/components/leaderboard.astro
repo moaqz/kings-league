@@ -101,7 +101,7 @@ const LEADERBOARD = [
   <div class="shadow rounded-b-lg pb-5">
     <table class="w-full">
       <thead class="shadow-sm">
-        <tr class="[&>th]:(py-2.5 text-[10px] text-[#5c5c5c])">
+        <tr class="[&>th]:(py-2.5 text-s text-kl-darkgrey)">
           <th title="Posición" scope="col">POS</th>
           <th title="Equipo" scope="col" class="text-left">EQUIPO</th>
           <th title="Puntos" scope="col">PTS</th>
@@ -110,9 +110,7 @@ const LEADERBOARD = [
         </tr>
       </thead>
 
-      <tbody
-        class="[&>tr>th]:(py-2 text-[10px]) [&>tr]:(border-t border-t-[#e8e8e8])"
-      >
+      <tbody class="[&>tr>th]:(py-2 text-s) [&>tr]:(border-t border-t-grey)">
         {
           LEADERBOARD.map((team, idx) => {
             return (
