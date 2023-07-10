@@ -1,26 +1,26 @@
 export const LINKS = [
   {
-    href: "https://kingsleague.pro/equipos/",
+    href: "/kings-league/equipos/",
     text: "Equipos",
   },
   {
-    href: "https://kingsleague.pro/jugador-12/",
+    href: "/kings-league/jugador-12/",
     text: "Jugador 12 y 13",
   },
   {
-    href: "https://kingsleague.pro/partidos/",
+    href: "/kings-league/partidos/",
     text: "Partidos",
   },
   {
-    href: "https://kingsleague.pro/clasificacion/",
+    href: "/kings-league/clasificacion/",
     text: "Clasificación",
   },
   {
-    href: "https://kingsleague.pro/estadisticas/",
+    href: "/kings-league/estadisticas/",
     text: "Estadísticas",
   },
   {
-    href: "https://kingsleague.pro/presupuestos/",
+    href: "/kings-league/presupuestos/",
     text: "Presupuestos",
   },
 ];
@@ -28,78 +28,78 @@ export const LINKS = [
 export const TEAMS = [
   {
     name: "porcinos-fc",
-    logo: "/teams/logos/porcinos-fc.svg",
+    logo: "/kings-league/teams/logos/porcinos-fc.svg",
   },
   {
     name: "aniquiladores-fc",
-    logo: "/teams/logos/aniquiladores.svg",
+    logo: "/kings-league/teams/logos/aniquiladores.svg",
   },
   {
     name: "pio-fc",
-    logo: "/teams/logos/pio-fc.svg",
+    logo: "/kings-league/teams/logos/pio-fc.svg",
   },
   {
     name: "xbuyer-team",
-    logo: "/teams/logos/xbuyer.svg",
+    logo: "/kings-league/teams/logos/xbuyer.svg",
   },
   {
     name: "el-barrio",
-    logo: "/teams/logos/el-barrio.svg",
+    logo: "/kings-league/teams/logos/el-barrio.svg",
   },
   {
     name: "1k",
-    logo: "/teams/logos/1k.svg",
+    logo: "/kings-league/teams/logos/1k.svg",
   },
   {
     name: "rayo-barcelona",
-    logo: "/teams/logos/rayo-barcelona.svg",
+    logo: "/kings-league/teams/logos/rayo-barcelona.svg",
   },
   {
     name: "ultimate-mostoles",
-    logo: "/teams/logos/ultimate-mostoles.svg",
+    logo: "/kings-league/teams/logos/ultimate-mostoles.svg",
   },
   {
     name: "kunisports",
-    logo: "/teams/logos/kunisports.svg",
+    logo: "/kings-league/teams/logos/kunisports.svg",
   },
   {
     name: "jijantes",
-    logo: "/teams/logos/jijantes.svg",
+    logo: "/kings-league/teams/logos/jijantes.svg",
   },
   {
     name: "los-troncos-fc",
-    logo: "/teams/logos/los-troncos.svg",
+    logo: "/kings-league/teams/logos/los-troncos.svg",
   },
   {
     name: "saiyans-fc",
-    logo: "/teams/logos/saiyans-fc.svg",
+    logo: "/kings-league/teams/logos/saiyans-fc.svg",
   },
 ];
 
 export const SOCIAL_NETWORKS = [
   {
     name: "Twitter",
-    icon: "/social/twitter.svg",
+    icon: "/kings-league/social/twitter.svg",
     href: "https://twitter.com/kingsleague",
   },
   {
     name: "Instagram",
-    icon: "/social/instagram.svg",
+    icon: "/kings-league/social/instagram.svg",
     href: "https://www.instagram.com/kingsleague",
   },
   {
     name: "Tiktok",
-    icon: "/social/tiktok.svg",
+    icon: "/kings-league/social/tiktok.svg",
     href: "https://www.tiktok.com/@kingsleague",
   },
   {
     name: "Youtube",
-    icon: "/social/youtube.svg",
+    icon: "/kings-league/social/youtube.svg",
     href: "https://www.youtube.com/@KingsLeagueOfficial",
   },
   {
     name: "Twitch",
-    icon: "/social/twitch.svg",
+    icon: "/kings-league/social/twitch.svg",
     href: "https://www.twitch.tv/kingsleague",
   },
 ];

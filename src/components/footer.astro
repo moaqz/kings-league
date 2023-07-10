@@ -4,23 +4,23 @@ import SocialNetworks from "./social-networks.astro";
 const FOOTER_LINKS = [
   {
     text: "Entradas",
-    href: "/entradas",
+    href: "/kings-league/entradas",
   },
   {
     text: "Reglamentos",
-    href: "/reglamentos",
+    href: "/kings-league/reglamentos",
   },
   {
     text: "FAQS",
-    href: "/faqs",
+    href: "/kings-league/faqs",
   },
   {
     text: "Draft",
-    href: "/draft-jugador",
+    href: "/kings-league/draft-jugador",
   },
   {
     text: "Contacto",
-    href: "/contacto",
+    href: "/kings-league/contacto",
   },
 ];
 ---
@@ -32,7 +32,7 @@ const FOOTER_LINKS = [
     >
       <div class="flex-1">
         <img
-          src="/kl-landscape.svg"
+          src="/kings-league/kl-landscape.svg"
           width="200"
           height="90"
           alt="logo de Kings League y Infojobs"
@@ -44,7 +44,7 @@ const FOOTER_LINKS = [
 
       <div class="flex-1">
         <img
-          src="/ql-hor-pos.svg"
+          src="/kings-league/ql-hor-pos.svg"
           width="200"
           height="90"
           alt="logo de Queens League"
@@ -89,15 +89,17 @@ const FOOTER_LINKS = [
 
       <ul class="[&>li>a]:(text-xs text-black) flex justify-between sm:gap-5">
         <li>
-          <a href="/politica-de-privacidad" class="hover:underline"
+          <a href="/kings-league/politica-de-privacidad" class="hover:underline"
             >Política de Privacidad</a
           >
         </li>
         <li>
-          <a href="/aviso-legal" class="hover:underline">Aviso legal</a>
+          <a href="/kings-league/aviso-legal" class="hover:underline"
+            >Aviso legal</a
+          >
         </li>
         <li>
-          <a href="/politica-de-cookies" class="hover:underline"
+          <a href="/kings-league/politica-de-cookies" class="hover:underline"
             >Política de Cookies</a
           >
         </li>
@@ -117,7 +119,7 @@ const FOOTER_LINKS = [
   }
 
   .m-logo::after {
-    content: url("/m.svg");
+    content: url("/kings-league/m.svg");
     width: 10px;
     height: 10px;
   }

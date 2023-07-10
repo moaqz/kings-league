@@ -17,7 +17,7 @@ import TwitchIcon from "@/icons/Twitch.astro";
       {
         TEAMS.map(({ name, logo }) => (
           <li>
-            <a href={`/team/${name}`} title={name}>
+            <a href={`/kings-league/team/${name}`} title={name}>
               <img
                 class="h-8 w-8"
                 src={logo}
@@ -37,7 +37,7 @@ import TwitchIcon from "@/icons/Twitch.astro";
   <div class="flex justify-between px-4 lg:hidden relative">
     <a href="/" aria-label="Back to home" class="block h-20 w-16">
       <img
-        src="/logo-kings.svg"
+        src="/kings-league/logo-kings.svg"
         alt="Kings League logo"
         class="h-full w-full"
         decoding="async"
@@ -76,7 +76,7 @@ import TwitchIcon from "@/icons/Twitch.astro";
       class="hidden lg:(block absolute -top-8 z-30)"
     >
       <img
-        src="/logo-kings.svg"
+        src="/kings-league/logo-kings.svg"
         alt="Kings League logo"
         decoding="async"
         fetchpriority="high"
